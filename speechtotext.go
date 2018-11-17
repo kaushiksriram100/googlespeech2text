@@ -16,7 +16,7 @@ func main() {
 
 	//get the input file.
 
-	var speech_file *string = flag.String("input", "/Users/skaushik/Documents/my_dev_env/go_workspace/src/github.com/kaushiksriram100/GCP_AI/somespeech.raw", "the input *.raw file. To convert - sox bob1.wav --channels=1 --rate 16k --bits 16 bob1a.raw")
+	var speech_file *string = flag.String("input", "/tmp/GCP_AI/somespeech.raw", "the input *.raw file. To convert - sox bob1.wav --channels=1 --rate 16k --bits 16 bob1a.raw")
 	flag.Parse()
 	//creates a context that never expires
 	ctx := context.Background()
